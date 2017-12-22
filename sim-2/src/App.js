@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import {connect} from 'react-redux';
-import WizardOne from './controllers/WizardOne';
+import WizardOne from './components/WizardOne'
 
 class App extends Component {
   constructor(){
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <WizardOne/>
+        WHATEVER!!!
       </div>
     );
   }

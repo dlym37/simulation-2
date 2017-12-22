@@ -2,20 +2,20 @@ const initialState = {
     userName: "",
     password: "",
     three: "",
-    four: "",
+    four: ""
 }
 
-const UPDATE_USERNAME = "UPDATE_USERNAME";
+const UPDATE_USERNAME = "UPDATE_USERNAME";//SIM-2 43E
 const UPDATE_PASSWORD = "UPDATE_PASSWORD";
 const CASE_THREE = "CASE_THREE";
 const CASE_FOUR = "CASE_FOUR";
 
 
-function reducer(state=initialState, action){//SIM-1 43D
+function reducer(state = initialState, action){//SIM-1 43D
     console.log("reducer:", state, action)
     switch (action.type){
         case UPDATE_USERNAME:
-        return Object.assign({}, state, {userName: action.payload})//SIM-2 43E
+        return Object.assign({}, state, {userName: action.payload})
         
         case UPDATE_PASSWORD:
         return Object.assign({}, state, {password: action.payload})
